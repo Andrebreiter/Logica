@@ -1,0 +1,25 @@
+<meta charset = "UTF-8">
+
+<script>
+	function pulalinha() { 
+		document.write("<br><br>")
+	}
+	function mostra(frase) { 
+		document.write(frase) 
+		pulalinha() 
+	}
+	function CalculaImc(x, y) {
+		var Imc = x/(y*y)
+		mostra("O Imc calculado é " + Imc)
+		return Imc
+	}
+	
+	var Imc1 = CalculaImc(61, 1.75);
+	var Imc2 = CalculaImc(59, 1.68);
+	var Imc3 = CalculaImc(90, 1.72);
+
+	var MédiaImcs = (Imc1 + Imc2 + Imc3)/3
+	mostra("A média dos imcs é: " + MédiaImcs)
+
+
+</script>
